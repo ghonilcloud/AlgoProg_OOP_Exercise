@@ -30,6 +30,11 @@ class ButcherOW:
         self.__calculated_price = self.__pounds * self.__standardpriceperpound
         return self.__calculated_price
     
-item1 = ButcherOW("White Truffles", 5)
-print(item1.calculated_price_OW())
-
+    def getName_OW(self):
+        return self.__foodname
+    
+    def getAmount_OW(self):
+        return self.__pounds
+    
+    def getStandardpriceperpound_OW(self):
+        return self.__standardpriceperpound
